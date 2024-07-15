@@ -1,0 +1,54 @@
+/* Write your CSS here */
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.not-found-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 90%;
+    max-width: 1110px;
+}
+.image {
+    width: 325px;
+}
+.heading {
+    color: #334155;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0px;
+    margin-top: 32px;
+}
+.description {
+    color: #64748b;
+    font-family: 'Roboto';
+    font-size: 16px;
+    margin-top: 16px;
+}
+@media (max-width: 768px) {
+    .not-found-content-container {
+        align-items: flex-start;
+        margin-top: 60px;
+    }
+    .description {
+        text-align: center;
+        font-size: 12px;
+        width: 240px;
+        margin-top: 6px;
+    }
+}
+@media (min-width: 768px) {
+    .image {
+        width: 475px;
+    }
+    .heading{
+        font-size: 36px;
+        font-weight: 500;
+    }
+}
